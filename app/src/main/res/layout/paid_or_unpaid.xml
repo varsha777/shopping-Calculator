@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <RadioGroup
+        android:id="@+id/paid_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/paid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:buttonTint="#000000"
+            android:text="Paid"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/unpaid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:buttonTint="#000000"
+            android:text="UnPaid"
+            android:textColor="#000000" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/done_paid_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/paid_status"
+        android:layout_alignStart="@+id/paid_status"
+        android:layout_below="@+id/paid_status"
+        android:text="Done"
+        android:visibility="gone" />
+
+</RelativeLayout>

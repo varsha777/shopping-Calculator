@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.billbooking.oms.billbooking.LoginRegisterOtpForgot.OtpVerification">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/logo" />
+
+    <EditText
+        android:id="@+id/otp_mobile_number"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/edittext"
+        android:hint="@string/mobile_number"
+        android:inputType="number"
+        android:maxLength="10"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/resend_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/otp_mobile_number"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:gravity="end"
+        android:text="@string/resend" />
+
+
+    <EditText
+        android:id="@+id/otp_value"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_below="@id/resend_otp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/edittext"
+        android:hint="@string/otp"
+        android:inputType="number"
+        android:maxLength="4"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/verify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/otp_value"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button"
+        android:text="submit"
+        android:textColor="#FFFFFF" />
+
+
+</RelativeLayout>

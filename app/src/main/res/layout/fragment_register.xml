@@ -1,0 +1,162 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.billbooking.oms.billbooking.LoginRegisterOtpForgot.Register">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/logo" />
+
+
+            <EditText
+                android:id="@+id/user_name"
+                android:layout_width="291dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/logo"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext"
+                android:hint="Name"
+                android:inputType="text|textCapSentences"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/user_email"
+                android:layout_width="291dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/user_name"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/mobile_number"
+                android:layout_width="291dp"
+                android:layout_height="51dp"
+                android:layout_below="@id/user_email"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/edittext"
+                android:focusableInTouchMode="false"
+                android:hint="Mobile Number"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/user_password"
+                android:layout_width="291dp"
+                android:layout_height="51dp"
+                android:layout_below="@id/mobile_number"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/edittext"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/pincode"
+                android:layout_width="291dp"
+                android:layout_height="51dp"
+                android:layout_below="@id/user_password"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/edittext"
+                android:hint="PinCode"
+                android:inputType="number"
+                android:maxLength="6"
+                android:textAlignment="center" />
+
+            <!--<ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp" />-->
+
+            <HorizontalScrollView
+                android:id="@+id/linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pincode">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+
+
+                    <Spinner
+                        android:id="@+id/state"
+                        android:layout_width="150dp"
+                        android:layout_height="51dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_weight="1"
+                        android:hint="State"
+                        android:textAlignment="center" />
+
+                    <!--  <EditText
+                          android:id="@+id/city"
+                          android:layout_width="150dp"
+                          android:layout_height="51dp"
+                          android:layout_marginTop="30dp"
+                          android:background="@drawable/edittext"
+                          android:hint="City"
+                          android:inputType="text"
+                          android:textAlignment="center" />-->
+
+                    <EditText
+                        android:id="@+id/country"
+                        android:layout_width="100dp"
+                        android:layout_height="51dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext"
+                        android:focusableInTouchMode="false"
+                        android:text="India"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+
+            </HorizontalScrollView>
+
+            <Button
+                android:id="@+id/register"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:layout_below="@id/linearlayout"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:text="Register"
+                android:textColor="#FFFFFF" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

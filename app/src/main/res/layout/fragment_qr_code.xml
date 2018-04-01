@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.billbooking.oms.billbooking.DashBoardFragments.QrCode">
+
+
+    <TextView
+        android:id="@+id/qrcode_textview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:text="Enter Id"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+
+    <ImageView
+        android:id="@+id/qrcode_image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="70dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp" />
+
+</RelativeLayout>
