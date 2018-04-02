@@ -56,9 +56,7 @@ public class SendAllValues {
     TransferUtility transferUtility;
     TransferObserver observer;*/
 
-    String key = "AKIAJ3TXMLR4FPL7V3WQ";
-    String secret = "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";
-    String bucketName = "elasticbeanstalk-ap-south-1-436895957471";
+    
 
     public SendAllValues(Context context) {
         this.context = context;
@@ -285,7 +283,7 @@ public class SendAllValues {
         return false;
     }*/
 
-    private AmazonS3Client s3Client;
+   /* private AmazonS3Client s3Client;
     private BasicAWSCredentials credentials;
 
     private void uploadFile() {
@@ -385,7 +383,7 @@ public class SendAllValues {
 
             }
         });
-    }
+    }*/
 
 
 }
